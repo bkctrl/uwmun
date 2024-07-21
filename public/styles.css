@@ -1,0 +1,42 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header-text {
+  font-size: 1.25rem; 
+}
+
+.nav-menu {
+  font-size: 1rem; 
+}
+
+@media (max-width: 768px) {
+  .header-text {
+    font-size: 1rem; 
+  }
+
+  .nav-menu {
+    font-size: 0.875rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .header-text {
+    font-size: 0.875rem; 
+  }
+
+  .nav-menu {
+    font-size: 0.75rem; 
+  }
+}
+
+
