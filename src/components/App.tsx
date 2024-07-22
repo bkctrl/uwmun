@@ -17,9 +17,6 @@ export function App() {
 
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      
-      
-      <link rel="icon" href="/assets/uwmun-page-logo.png" />
       <link rel="stylesheet" href="/styles.css" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
       <a href="#top">< ScrollTopButton /></a>
