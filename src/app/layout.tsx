@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "UWMUN",
+  title: "University of Waterloo",
   description: "UWMUN - Participate in MUN conferences, improve your public speaking, and engage in global discussions at the University of Waterloo.",
 };
 
