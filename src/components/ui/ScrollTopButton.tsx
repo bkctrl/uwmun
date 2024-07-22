@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button"
+import { JSX, SVGProps } from "react";
 
 export default function ScrollTopButton() {
   return (
@@ -9,7 +10,6 @@ export default function ScrollTopButton() {
         size="icon"
         className="shadow-lg transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
         style={{borderRadius : "50%", width: "4rem", height: "4rem" }}
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         <ArrowUpIcon className="h-6 w-6" />
         <span className="sr-only">Scroll to top</span>
@@ -18,7 +18,7 @@ export default function ScrollTopButton() {
   )
 }
 
-function ArrowUpIcon(props) {
+function ArrowUpIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

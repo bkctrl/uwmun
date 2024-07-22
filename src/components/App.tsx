@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import { Input } from "@/components/ui/input"
@@ -5,20 +6,24 @@ import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardContent, CardFooter, CardDescription } from "@/components/ui/card"
 import ScrollTopButton from "@/components/ui/ScrollTopButton"
+import ScrollDownButton from "@/components/ui/ScrollDownButton"
+import { JSX, SVGProps, useEffect, useState } from "react"
+import AOS from 'aos';
 
 export function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <title>UWMUN</title>
       <link rel="icon" href="/assets/uwmun-page-logo.png" />
       <link rel="stylesheet" href="/styles.css" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
-      < ScrollTopButton />
+      <a href="#top">< ScrollTopButton /></a>
       {/* Header */}
+      <div id="top">
       <header className="px-4 lg:px-6 h-14 flex items-center bg-primary text-primary-foreground">
         <Link href="#" className="flex items-center justify-center" prefetch={false}>
           <img src="/assets/uwmun-logo.png" width="36" height="36"></img>
@@ -39,19 +44,21 @@ export function App() {
           </Link>
         </nav>
       </header> 
+      </div>
       <main className="flex-1 justify-center">
         {/* Home */}
-      <section className="w-full justify-center bg-primary text-primary-foreground" style={{paddingTop : "20vh", width: "100vw", minHeight: "100vh"}}>
+         <section className="w-full justify-center bg-primary text-primary-foreground" style={{paddingTop : "20vh", width: "100vw", minHeight: "100vh"}}>
       <div className="w-full" style={{width: "100%"}}>
           <div className="grid gap-6 lg:grid-cols-[1fr_minmax(0,60vw)] lg:gap-12 xl:grid-cols-[1fr_minmax(0,60vw)] justify-center" style={{width: "100%", paddingLeft: "24vw", paddingRight: "16vw"}}>
           <img src="assets/uwmun-logo.png"
                 data-aos="fade-left"
                 data-aos-duration="1500"
+                data-aos-mirror="true"
                 style={{width : "22vw", height: "272"}}
                 alt="uwmun-logo"
                 className="mx-auto  overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
                 />
-              <div className="flex flex-col justify-center space-y-4" data-aos="fade-right" data-aos-duration="1500">
+              <div className="flex flex-col justify-center space-y-4" data-aos="fade-right" data-aos-duration="1500" data-aos-mirror="true">
                 <div className="space-y-2">
                   <h1 className="flex text-xl font-bold tracking-tighter sm:text-xl xl:text-2xl/none" style={{width : "60%"}}>
                     University of Waterloo
@@ -79,19 +86,23 @@ export function App() {
               </div>
               
           </div>
-
+          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4">
+            <a href="#about"><ScrollDownButton /></a>
+          </div>
         </div>
         
         </section>
+
         {/* What We Do */}
-        <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-muted" style={{padding : "10vw", minHeight: "100vh"}} data-aos="fade-up" data-aos-duration="1500">
+        <div id="about">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted" style={{padding : "10vw", minHeight: "100vh"}} data-aos="fade-up" data-aos-duration="1500">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm" style={{backgroundColor : "white"}}>What We Do</div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Empowering Global Perspectives</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                We discuss the political, social, and economic state of the world via student driven and focused debate. Using this debate, we endeavour to also expand the individual awareness of the world at large, and discover possible solutions to the issues plaguing the world and the people within. UWMUN has at its core the goal of making its members into more aware and capable global citizens, through open debate and engagement on the issues of the world through the club's events and initiatives.
+                We discuss the political, social, and economic state of the world via student driven and focused debate. Using this debate, we endeavour to also expand the individual awareness of the world at large, and discover possible solutions to the issues plaguing the world and the people within. UWMUN has at its core the goal of making its members into more aware and capable global citizens, through open debate and engagement on the issues of the world through the club&apos;s events and initiatives.
                 </p>
               </div>
             </div>
@@ -134,7 +145,10 @@ export function App() {
             </div>
           </div>
         </section>
+        </div>
+
         {/* Executive Board */}
+        <div id="execs">
         <section className="w-full py-12 md:py-24 lg:py-32" style={{padding : "10vw", minHeight: "100vh"}} data-aos="fade-up" data-aos-duration="1000">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -210,8 +224,11 @@ export function App() {
             </div>
           </div>
         </section>
+        </div>
+
         {/* Upcoming Events */}
-        <section id="events" className="w-full py-12 md:py-24 lg:py-32 bg-secondary" style={{padding : "10vw", minHeight: "100vh"}} data-aos="fade-up" data-aos-duration="1000">
+        <div id="events">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary" style={{padding : "10vw", minHeight: "100vh"}} data-aos="fade-up" data-aos-duration="1000">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -284,7 +301,7 @@ export function App() {
                 <CardHeader>
                   <CardTitle>World War II Conference</CardTitle>
                   <CardDescription>
-                  Dive into historical diplomacy at our World War II Conference, where you'll debate and resolve key wartime issues.
+                  Dive into historical diplomacy at our World War II Conference, where you&apos;ll debate and resolve key wartime issues.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -311,8 +328,11 @@ export function App() {
             </div>
           </div>
         </section>
+        </div>
+
         {/* Resources */}
-        <section id="resources" className="w-full py-12 md:py-24 lg:py-32" style={{padding : "10vw", minHeight: "100vh"}} data-aos="fade-up" data-aos-duration="1000">
+        <div id="resources">
+        <section className="w-full py-12 md:py-24 lg:py-32" style={{padding : "10vw", minHeight: "100vh"}} data-aos="fade-up" data-aos-duration="1000">
           <div className="container grid gap-12 px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -402,7 +422,10 @@ export function App() {
             </div>
           </div>
         </section>
+        </div>
+
         {/* Get Involved */}
+        <div>
         <section className="w-full py-12 md:py-24 lg:py-32 bg-muted" style={{minHeight: "93vh", padding : "10vw"}} data-aos="fade-up" data-aos-duration="1000">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -425,6 +448,8 @@ export function App() {
             </div>
           </div>
         </section>
+        </div>
+        
       </main>
       {/* Footer */}
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-primary text-primary-foreground text-center" style={{minHeight: "7vh"}}>
@@ -450,7 +475,7 @@ export function App() {
 
 // ICONS ------------------------------------------
 
-function CalendarIcon(props) {
+function CalendarIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -472,8 +497,7 @@ function CalendarIcon(props) {
   )
 }
 
-
-function GlobeIcon(props) {
+function GlobeIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -494,7 +518,7 @@ function GlobeIcon(props) {
   )
 }
 
-function ArrowRightIcon(props) {
+function ArrowRightIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -514,8 +538,7 @@ function ArrowRightIcon(props) {
   )
 }
 
-
-function BookIcon(props) {
+function BookIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -534,8 +557,7 @@ function BookIcon(props) {
   )
 }
 
-
-function BookOpenIcon(props) {
+function BookOpenIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -555,8 +577,7 @@ function BookOpenIcon(props) {
   )
 }
 
-
-function NewspaperIcon(props) {
+function NewspaperIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -578,7 +599,7 @@ function NewspaperIcon(props) {
   )
 }
 
-function CalendarDaysIcon(props) {
+function CalendarDaysIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -606,8 +627,7 @@ function CalendarDaysIcon(props) {
   )
 }
 
-
-function LocateIcon(props) {
+function LocateIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -630,7 +650,7 @@ function LocateIcon(props) {
   )
 }
 
-function ArrowUpIcon(props) {
+function ArrowUpIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -650,7 +670,7 @@ function ArrowUpIcon(props) {
   )
 }
 
-function LinkedinIcon(props) {
+function LinkedinIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -671,7 +691,7 @@ function LinkedinIcon(props) {
   )
 }
 
-function InstagramIcon(props) {
+function InstagramIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -692,7 +712,7 @@ function InstagramIcon(props) {
   )
 }
 
-function DiscordIcon(props) {
+function DiscordIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
