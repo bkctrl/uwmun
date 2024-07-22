@@ -71,7 +71,7 @@ export function App() {
                     global awareness, diplomacy, and leadership skills.
                   </p>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4" style={{paddingBottom : "4rem;"}}>
                   <Link href="https://www.instagram.com/uwmun/" target="_blank" className="group" prefetch={false}>
                   <InstagramIcon className="h-8 w-8 transition-colors group-hover:text-[#E1306C]" />
                   </Link>
