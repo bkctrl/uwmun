@@ -9,6 +9,8 @@ import ScrollTopButton from "@/components/ui/ScrollTopButton"
 import ScrollDownButton from "@/components/ui/ScrollDownButton"
 import { JSX, SVGProps, useEffect, useState } from "react"
 import AOS from 'aos';
+import Head from 'next/head';
+
 
 export function App() {
   useEffect(() => {
@@ -17,7 +19,12 @@ export function App() {
 
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <title>UWMUN</title>
+      <Head>
+        <title>UWMUN</title>
+        <meta name="description" content="UWMUN - Participate in MUN conferences, improve your public speaking, and engage in global discussions at the University of Waterloo." />
+        <meta name="keywords" content="University of Waterloo Model United Nations, University of Waterloo MUN, University of Waterloo, UW Model United Nations, UWMUN, uwmun, UW MUN, MUN, uwmun.ca, uwmun.com" />
+      </Head>
+      
       <link rel="icon" href="/assets/uwmun-page-logo.png" />
       <link rel="stylesheet" href="/styles.css" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
