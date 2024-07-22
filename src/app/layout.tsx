@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "University of Waterloo Model United Nations",
+    default: "UWMUN",
     template: "",
   },
   description: "UWMUN - Participate in MUN conferences, improve your public speaking, and engage in global discussions at the University of Waterloo.",
