@@ -376,7 +376,7 @@ export function App() {
                   </p>
                 </CardContent>
                 <CardFooter>
-                  <Link href="assets/training-session.pdf" target="_blank" className="flex items-center group hover:underline underline-offset-4" prefetch={false}>
+                  <Link href="https://uwmun.s3.ca-central-1.amazonaws.com/Training+Session.pdf" target="_blank" className="flex items-center group hover:underline underline-offset-4" prefetch={false}>
                     Download Slides{" "}
                     <ArrowRightIcon className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
@@ -395,7 +395,7 @@ export function App() {
                   </p>
                 </CardContent>
                 <CardFooter>
-                  <Link href="assets/example-resolution.pdf" target="_blank" className="flex items-center group hover:underline underline-offset-4" prefetch={false}>
+                  <Link href="https://uwmun.s3.ca-central-1.amazonaws.com/example-resolution.pdf" target="_blank" className="flex items-center group hover:underline underline-offset-4" prefetch={false}>
                     View Sample Paper <ArrowRightIcon className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </CardFooter>
@@ -413,7 +413,7 @@ export function App() {
                   </p>
                 </CardContent>
                 <CardFooter>
-                  <Link href="assets/cheat-sheet.pdf" target="_blank" className="flex items-center group hover:underline underline-offset-4" prefetch={false}>
+                  <Link href="https://uwmun.s3.ca-central-1.amazonaws.com/cheat-sheet.pdf" target="_blank" className="flex items-center group hover:underline underline-offset-4" prefetch={false}>
                     Download Cheat Sheet{" "}
                     <ArrowRightIcon className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
