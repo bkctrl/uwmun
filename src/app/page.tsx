@@ -3,13 +3,13 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import AOS from 'aos';
-import { Avatar } from "@/components/ui/Avatar"; 
-import { Card, CardHeader, CardTitle, CardContent, CardFooter, CardDescription } from "@/components/ui/Card"; 
-import ContactForm from "@/components/ui/ContactForm";
-import Footer from "@/components/ui/Footer";
-import ScrollTopButton from "@/components/ui/ScrollTopButton";
-import ScrollDownButton from "@/components/ui/ScrollDownButton";
-import { CalendarIcon, GlobeIcon, ArrowRightIcon, BookIcon, BookOpenIcon, NewspaperIcon, CalendarDaysIcon, LocateIcon, ArrowUpIcon, LinkedinIcon, InstagramIcon, DiscordIcon } from "@/components/ui/Icons";
+import { Avatar } from "@/components/Avatar"; 
+import { Card, CardHeader, CardTitle, CardContent, CardFooter, CardDescription } from "@/components/Card"; 
+import ContactForm from "@/components/ContactForm";
+import Footer from "@/components/Footer";
+import ScrollTopButton from "@/components/ScrollTopButton";
+import ScrollDownButton from "@/components/ScrollDownButton";
+import { CalendarIcon, GlobeIcon, ArrowRightIcon, BookIcon, BookOpenIcon, NewspaperIcon, CalendarDaysIcon, LocateIcon, ArrowUpIcon, LinkedinIcon, InstagramIcon, DiscordIcon } from "@/components/Icons";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -17,6 +17,7 @@ export default function Home() {
   const [execData, setExecData] = useState([]);
   const [eventData, setEventData] = useState([]);
   const [resourceData, setResourceData] = useState([]);
+  const resourceIcons = [GlobeIcon, BookIcon, NewspaperIcon, BookOpenIcon];
 
   const API = process.env.NEXT_PUBLIC_VERCEL_SERVER;
   // const API = "http://localhost:4000"; // enable for local testing
@@ -273,12 +274,14 @@ export default function Home() {
               </div>
             </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4" style={{paddingTop : "5vh"}}>
+              {/* GlobeIcon BookIcon NewspaperIcon BookOpenIcon */}
               {resourceData.map((resource, index) => {
+                const IconComponent = resourceIcons[index % resourceIcons.length];
                 return (
                   <Card key={index} data-aos="zoom-in" aos-duration="1500">
                   <CardHeader>
                     <CardTitle>
-                      <GlobeIcon className="w-7 h-7 mr-2"/>
+                    <IconComponent className="w-7 h-7 mr-2"/>
                       <p style={{paddingTop : "3vh"}}>{(resource as any)['Resource Name'].title[0].plain_text}</p>
                     </CardTitle>
                   </CardHeader>
