@@ -30,6 +30,8 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
     "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
