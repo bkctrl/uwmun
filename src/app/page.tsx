@@ -12,13 +12,11 @@ import ScrollDownButton from "@/components/ui/ScrollDownButton";
 import { CalendarIcon, GlobeIcon, ArrowRightIcon, BookIcon, BookOpenIcon, NewspaperIcon, CalendarDaysIcon, LocateIcon, ArrowUpIcon, LinkedinIcon, InstagramIcon, DiscordIcon } from "@/components/ui/Icons";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-// import axios from "axios";
 
 export default function Home() {
   const [execData, setExecData] = useState([]);
   const [eventData, setEventData] = useState([]);
   const [resourceData, setResourceData] = useState([]);
-  // axios.defaults.withCredentials = true;
 
   const API = process.env.NEXT_PUBLIC_VERCEL_SERVER;
   // const API = "http://localhost:4000"; // enable for local testing
