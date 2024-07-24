@@ -12,7 +12,7 @@ import ScrollDownButton from "@/components/ui/ScrollDownButton";
 import { CalendarIcon, GlobeIcon, ArrowRightIcon, BookIcon, BookOpenIcon, NewspaperIcon, CalendarDaysIcon, LocateIcon, ArrowUpIcon, LinkedinIcon, InstagramIcon, DiscordIcon } from "@/components/ui/Icons";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-import axios from "axios";
+// import axios from "axios";
 
 export default function Home() {
   const [execData, setExecData] = useState([]);
