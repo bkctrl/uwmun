@@ -1,6 +1,7 @@
 "use client";
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/Button";
+import React from "react";
 import { JSX, SVGProps } from "react";
 
 export default function ScrollTopButton() {
