@@ -18,7 +18,7 @@ export default function Home() {
   const [execData, setExecData] = useState([]);
   const [eventData, setEventData] = useState([]);
   const [resourceData, setResourceData] = useState([]);
-  axios.defaults.withCredentials = true;
+  // axios.defaults.withCredentials = true;
 
   const API = process.env.NEXT_PUBLIC_VERCEL_SERVER;
   // const API = "http://localhost:4000"; // enable for local testing
