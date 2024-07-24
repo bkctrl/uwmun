@@ -13,6 +13,7 @@ const notion = new Client({
 });
 
 const app = express();
+app.use(cors())
 // app.use(cors({
 //   origin: ["uwmun-3ga6j0koh-bkctrls-projects.vercel.app"],
 //   methods: ["GET"],
