@@ -13,11 +13,11 @@ const notion = new Client({
 });
 
 const app = express();
-app.use(cors({
-  origin: ["uwmun-3ga6j0koh-bkctrls-projects.vercel.app"],
-  methods: ["GET"],
-  credentials: true
-}))
+// app.use(cors({
+//   origin: ["uwmun-3ga6j0koh-bkctrls-projects.vercel.app"],
+//   methods: ["GET"],
+//   credentials: true
+// }))
 
 app.get('/execs-data', async (req, res) => { 
   console.log(notionKey);
