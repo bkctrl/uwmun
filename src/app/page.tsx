@@ -18,8 +18,8 @@ export default function Home() {
   const [eventData, setEventData] = useState([]);
   const [resourceData, setResourceData] = useState([]);
 
-  const API = process.env.REACT_APP_VERCEL_SERVER;
-  // const API = "http://localhost:4000"; // enable for local testing
+  // const API = process.env.NEXT_PUBLIC_VERCEL_SERVER;
+  const API = "http://localhost:4000"; // enable for local testing
 
   useEffect(() => {
     AOS.init();
