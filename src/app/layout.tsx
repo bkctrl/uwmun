@@ -18,6 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
+        <title>University of Waterloo Model United Nations</title>
+        <link rel="icon" href="./favicon.ico" />
         <meta name="keywords" content="University of Waterloo Model United Nations, University of Waterloo MUN, University of Waterloo, UW Model United Nations, UWMUN, uwmun, UW MUN, MUN, uwmun.ca, uwmun.com" />
         <meta name="robots" content="index, follow" />
       </Head>
