@@ -24,7 +24,6 @@ export default function Home() {
   useEffect(() => {
     AOS.init();
     const fetchData = async () => {
-      // axios.post("uwmun-5g9fnie2r-bkctrls-projects.vercel.app");
       try {
         const execResponse = await fetch(`${API}/execs-data`);
         const execJson = await execResponse.json();
@@ -36,16 +35,14 @@ export default function Home() {
         const resourceJson = await resourceResponse.json();
         setResourceData(resourceJson);
       } catch (error) {
-        console.error("Error fetching exec data:", error);
+        console.error(error);
       }
-    };
-    
+    }
     fetchData();
+    if (execData.length === 0) {
+      return;
+    }
   }, []);
-
-  if (execData.length === 0) {
-    return;
-  }
 
   return (
     <div className="flex flex-col min-h-[100dvh]">
