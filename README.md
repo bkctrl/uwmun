@@ -22,7 +22,7 @@
     <a href=""><img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white"></a>
     <br /><br />
     
-    <a href="https://uwmun.ca" target="_blank"><strong>🔗 VIEW LIVE WEBSITE »</strong></a>
+    <div align="center"><a href="https://uwmun.ca" target="_blank"><strong>🔗 VIEW LIVE WEBSITE »</strong></a></div>
     <br />
     <br />
   </p>
