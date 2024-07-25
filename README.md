@@ -1,3 +1,4 @@
+<a href=""><img src="https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge"></a>
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -19,9 +20,9 @@
     <a href=""><img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"></a>
     <a href=""><img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white"></a>
     <a href=""><img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"></a>
-    <a href=""><img src="https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge"></a>
+    
         <br /><br />
-    <a href="https://uwmun.ca" target="_blank"><strong>🔗 View Live »</strong></a>
+    <a href="https://uwmun.ca" target="_blank"><strong>🔗 VIEW LIVE WEBSITE »</strong></a>
     <br />
     <br />
   </p>
