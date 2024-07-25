@@ -11,6 +11,7 @@
   <p align="center">
     The University of Waterloo Model United Nations website, automated with Notion API.
     <br /><br />
+    
     <a href=""><img src="https://img.shields.io/badge/Notion API-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white"></a>
     <a href=""><img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"></a>
     <a href=""><img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"></a>
@@ -20,9 +21,10 @@
     <a href=""><img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"></a>
     <a href=""><img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"></a>
     <a href=""><img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white"></a>
+    <p align="center">
     <br /><br />
     
-    <div align="center"><a href="https://uwmun.ca" target="_blank"><strong>🔗 VIEW LIVE WEBSITE »</strong></a></div>
+   <a href="https://uwmun.ca" target="_blank"><strong>🔗 VIEW LIVE WEBSITE »</strong></a>
     <br />
     <br />
   </p>
