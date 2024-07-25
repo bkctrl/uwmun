@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/bkctrl/uwmun">
-    <img src="https://uwmun.s3.ca-central-1.amazonaws.com/uwmun-logo-black.png" alt="Logo" width="80" height="80">
+    <img src="https://uwmun.s3.ca-central-1.amazonaws.com/uwmun-logo-black.png" alt="Logo" width="90" height="90">
   </a>
 
 <h3 align="center">UWMUN</h3>
