@@ -11,6 +11,7 @@
   <p align="center">
     The University of Waterloo Model United Nations website, automated with Notion API.
 <br /><br />
+    
 ![Notion API](https://img.shields.io/badge/Notion%20API-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
