@@ -1,5 +1,3 @@
-The University of Waterloo Model United Nations (UWMUN) website
-=======
 <a href=""><img src="https://img.shields.io/badge/Notion API-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white"></a>
 <a href=""><img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"></a>
 <a href=""><img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"></a>
@@ -14,14 +12,14 @@ The University of Waterloo Model United Nations (UWMUN) website
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/bkctrl/uwmun">
+    <img src="https://uwmun.s3.ca-central-1.amazonaws.com/uwmun-logo-black.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">UWMUN</h3>
 
   <p align="center">
-    project_description
+    The University of Waterloo Model United Nations website, automated with Notion API.
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
