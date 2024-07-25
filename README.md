@@ -21,7 +21,7 @@
   <p align="center">
     The University of Waterloo Model United Nations website, automated with Notion API.
     <br /><br />
-    <a href="https://github.com/github_username/repo_name"><strong>🔗 View Live »</strong></a>
+    <a href="https://uwmun.ca" target="_blank"><strong>🔗 View Live »</strong></a>
     <br />
     <br />
   </p>
