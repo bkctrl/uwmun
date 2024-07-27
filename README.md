@@ -116,13 +116,13 @@ To set up the project locally and get a local copy up and running:
 ### Database Setup 
 1. Navigate to [Notion](https://notion.so) and create a document.
 2. Create a new database by typing `/database`.
-3. Populate the database with appropriate data. The database should look something like:
+3. Populate the database with appropriate data. The database(s) you create should be in these formats:
 4. Navigate to [Integrations](https://www.notion.so/profile/integrations) and create a Notion integration. Select the database you created. Select `Internal` or `Public` as appropriate and choose a logo. The UWMUN wesbite for instance uses an internal integration. 
 5. Select appropriate capabilities. Then show the Internal Integration Secret. This would be the `NEXT_PUBLIC_NOTION_API_KEY` in your `.env.local`. **Do not share this with anyone!**
 6. Find out your database ID. This is what precedes `?v=` of the link when you open the dabase in fulll screen:
-```sh
-   https://www.notion.so/<database_ID>?v=<view_ID>
-```
+   ```sh
+      https://www.notion.so/<database_ID>?v=<view_ID>
+   ```
 This would be the `NEXT_PUBLIC_NOTION_EXECUTIVES_DATABASE_ID` or the ID of your specific database. The UWMUN website for instance has one for the executives database.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -132,11 +132,11 @@ This would be the `NEXT_PUBLIC_NOTION_EXECUTIVES_DATABASE_ID` or the ID of your 
 There are numerous options. This project uses **EmailJS** for its email submitting functionality. 
 1. Take a look at EmailJS's [Getting Started](https://www.emailjs.com/docs/) page for detailed instructions.
 2. Fill in the following in your `.env.local` file:
-```sh
-   NEXT_PUBLIC_EMAIL_API_KEY=
-   NEXT_PUBLIC_EMAIL_SERVICE_ID=
-   NEXT_PUBLIC_EMAIL_TEMPLATE_ID=
-```
+   ```sh
+      NEXT_PUBLIC_EMAIL_API_KEY=
+      NEXT_PUBLIC_EMAIL_SERVICE_ID=
+     NEXT_PUBLIC_EMAIL_TEMPLATE_ID=
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,13 +145,13 @@ There are numerous options. This project uses **EmailJS** for its email submitti
 You could test the backend both locally or by using a deployed API. The following is on testing locally. 
 1. Uncomment the commented-out code in `src/app/page.tsx` and `server/api/index.js` for local testing.
 2. Navigate to `index.js` and run the server. Assuming you are at the root directory:
-```sh
-   cd server/api && nodemon index.js
-```
+   ```sh
+      cd server/api && nodemon index.js
+   ```
 3. Open a new terminal and run the frontend. On the new terminal:
-```sh
-   npm run dev
-```
+   ```sh
+      npm run dev
+   ```
 4. Navigate to `localhost:3000` on your browser and see the project demo!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -160,11 +160,20 @@ You could test the backend both locally or by using a deployed API. The followin
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+The website automatically updates to the changes you make to the Notion document!
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+For instance:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+### Inviting Collaborators to Your Notion Workspace
+
+The key functionality of this project is to make it easier for teams with non-technical members to participate in website updating. To achieve this, simply:
+1. Click `share` in the top right corner of your Notion document.
+2. Select `Anyone with link at Your Notion`.
+3. Select `Full access`/`Can edit`/`Can comment`/`Can view` appropriately. For instance, the President and the administrator at UWMUN have full access while other executive have an editing privelege.
+4. Share the link(s) with your colleagues! 
 
 
 
