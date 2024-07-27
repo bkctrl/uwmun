@@ -179,7 +179,7 @@ The key functionality of this project is to make it easier for teams with non-te
 <!-- Code Highlights -->
 ## Usage of Notion Data in `page.tsx`
 Data from Notion is fetched with:
-  ```
+  ```ruby
       const [execData, setExecData] = useState([]);
     
       const API = process.env.NEXT_PUBLIC_VERCEL_SERVER;
@@ -204,7 +204,7 @@ Data from Notion is fetched with:
       ...
   ```
 The components in the frontend are then `map`ped from the Notion data:
-  ```
+  ```ruby
       <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
               {execData.map((exec, index) => { 
                 return (
@@ -227,7 +227,7 @@ The components in the frontend are then `map`ped from the Notion data:
 <!-- Code Highlights -->
 ## Obtaining Notion Data in `index.js`
 `index.js` uses the `@notionhq/client` library to fetch data from Notion using the Notion integration key and database ID from above:
-```
+```ruby
    const notion = new Client({ 
       auth: process.env.NEXT_PUBLIC_NOTION_API_KEY,
    });
