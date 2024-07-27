@@ -87,10 +87,10 @@ To set up the project locally and get a local copy up and running:
 2. Navigate to the project directory & install the dependencies: <br />
    ```sh
    cd uwmun && npm install
-   ```sh
+   ```
 3. Install the dependencies for the backend: <br />
    ```sh
-   cd server && npm instal
+   cd server && npm install
    ```
 4. Set up the environment variables. More information on each of them are given further below. Your `.env.local` file should consist of (with similar names):  <br />
    ```sh
@@ -107,6 +107,20 @@ To set up the project locally and get a local copy up and running:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!-- SETTING UP THE DATABASE -->
+## Setting Up the Database with Notion
+
+### Prerequisites
+* A Notion account
+
+### Database Setup 
+1. Navigate to [Notion](https://notion.so) and create a document.
+2. Create a new database by typing `/database`.
+3. Populate the database with appropriate data. The database should look something like:
+<img src="">
+4. Navigate to [Integrations](https://www.notion.so/profile/integrations) and create a Notion integration. Select the database you created. Select `Internal` or `Public` as appropriate and choose a logo. The UWMUN wesbite for instance uses an internal integration. 
+<img src="">
+5. Select appropriate capabilities. Then show the Internal Integration Secret. This would be the `NEXT_PUBLIC_NOTION_API_KEY` in your `.env.local`. **Do not share this with anyone!**
 
 <!-- USAGE EXAMPLES -->
 ## Usage
