@@ -121,9 +121,11 @@ To set up the project locally and get a local copy up and running:
 5. Select appropriate capabilities. Then show the Internal Integration Secret. This would be the `NEXT_PUBLIC_NOTION_API_KEY` in your `.env.local`. **Do not share this with anyone!**
 6. Find out your database ID. This is what precedes `?v=` of the link when you open the dabase in fulll screen:
 ```sh
-https://www.notion.so/<database_ID>?v=<view_ID>
+   https://www.notion.so/<database_ID>?v=<view_ID>
 ```
 This would be the `NEXT_PUBLIC_NOTION_EXECUTIVES_DATABASE_ID` or the ID of your specific database. The UWMUN website for instance has one for the executives database.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- EMAIL FUNCTION -->
 ## Enabling Email Submitting
@@ -131,10 +133,28 @@ There are numerous options. This project uses **EmailJS** for its email submitti
 1. Take a look at EmailJS's [Getting Started](https://www.emailjs.com/docs/) page for detailed instructions.
 2. Fill in the following in your `.env.local` file:
 ```sh
-NEXT_PUBLIC_EMAIL_API_KEY=
-NEXT_PUBLIC_EMAIL_SERVICE_ID=
-NEXT_PUBLIC_EMAIL_TEMPLATE_ID=
+   NEXT_PUBLIC_EMAIL_API_KEY=
+   NEXT_PUBLIC_EMAIL_SERVICE_ID=
+   NEXT_PUBLIC_EMAIL_TEMPLATE_ID=
 ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONFIGURING BACKEND -->
+## Configuring the Backend
+You could test the backend both locally or by using a deployed API. The following is on testing locally. 
+1. Uncomment the commented-out code in `src/app/page.tsx` and `server/api/index.js` for local testing.
+2. Navigate to `index.js` and run the server. Assuming you are at the root directory:
+```sh
+   cd server/api && nodemon index.js
+```
+3. Open a new terminal and run the frontend. On the new terminal:
+```sh
+   npm run dev
+```
+4. Navigate to `localhost:3000` on your browser and see the project demo!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- USAGE EXAMPLES -->
@@ -148,35 +168,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- CONTRIBUTING -->
-## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -186,26 +181,3 @@ Don't forget to give the project a star! Thanks again!
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
