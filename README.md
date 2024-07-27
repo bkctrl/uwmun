@@ -172,16 +172,77 @@ For instance:
 The key functionality of this project is to make it easier for teams with non-technical members to participate in website updating. To achieve this, simply:
 1. Click `share` in the top right corner of your Notion document.
 2. Select `Anyone with link at Your Notion`.
-3. Select `Full access`/`Can edit`/`Can comment`/`Can view` appropriately. For instance, the President and the administrator at UWMUN have full access while other executive have an editing privelege.
+3. Select `Full access`/`Can edit`/`Can comment`/`Can view` appropriately. For instance, the President and the administrator at UWMUN have full access while other executive have an editing privilege.
 4. Share the link(s) with your colleagues! 
 
 
+<!-- Code Highlights -->
+## Usage of Notion Data in `page.tsx`
+Data from Notion is fetched with:
+  ```
+      const [execData, setExecData] = useState([]);
+    
+      const API = process.env.NEXT_PUBLIC_VERCEL_SERVER;
+      // const API = "http://localhost:4000"; // enable for local testing
+    
+      useEffect(() => {
+        AOS.init();
+        const fetchData = async () => {
+          try {
+            const execResponse = await fetch(`${API}/execs-data`);
+            const execJson = await execResponse.json();
+            setExecData(execJson);
+          } catch (error) {
+            console.error(error);
+          }
+        }
+        fetchData();
+        if (execData.length === 0) {
+          return;
+        }
+      }, []);
+      ...
+  ```
+The components in the frontend are then `map`ped from the Notion data:
+  ```
+      <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
+              {execData.map((exec, index) => { 
+                return (
+                  <div key={index} data-aos="zoom-in" aos-duration="1500" className="flex flex-col items-center justify-center space-y-4">
+                    <Avatar>
+                      <img src={(exec as any)["Profile Link"].url} className="mx-auto" style={{borderRadius : "50%", width : "20%", height : "20%"}}/>
+                    </Avatar>
+                    <div className="space-y-1 text-center">
+                      <h3 className="text-xl font-bold">{(exec as any).Name.title[0].plain_text}</h3>
+                      <p className="text-muted-foreground">{(exec as any).Position.rich_text[0].plain_text}</p>
+                      <p className="text-muted-foreground">{(exec as any).Program.rich_text[0].plain_text}</p>
+                    </div>
+                  </div>
+                );
+              })}
+        </div>
+    ```
 
 
-
-
-
-
+<!-- Code Highlights -->
+## Obtaining Notion Data in `index.js`
+`index.js` uses the `@notionhq/client` library to fetch data from Notion using the Notion integration key and database ID from above:
+```
+   const notion = new Client({ 
+      auth: process.env.NEXT_PUBLIC_NOTION_API_KEY,
+   });
+   app.get('/execs-data', async (req, res) => { 
+      try {
+        const response = await notion.databases.query({
+          database_id: process.env.NEXT_PUBLIC_NOTION_EXECUTIVES_DATABASE_ID,
+        }); 
+        const data = response.results.reverse().map(result => result.properties);
+        res.json(data);
+      } catch (error) {
+        res.status(500).json({ error: error.message });  
+      } 
+    }); 
+```
 
 
 <!-- LICENSE -->
