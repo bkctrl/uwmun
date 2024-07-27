@@ -80,28 +80,28 @@ To set up the project locally and get a local copy up and running:
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the repository: <br />
    ```sh
    git clone https://github.com/bkctrl/uwmun.git
    ```
-2. Navigate to the project directory & install the dependencies :
-  ```sh
-cd uwmun && npm install
+2. Navigate to the project directory & install the dependencies: <br />
    ```sh
-3. Install the dependencies for the backend:
-  ```sh
-  cd server && npm instal
+   cd uwmun && npm install
+   ```sh
+3. Install the dependencies for the backend: <br />
+   ```sh
+   cd server && npm instal
    ```
-4. Set up the environment variables. More information on each of them are given further below. Your `.env.local` file should consist of (with similar names): 
+4. Set up the environment variables. More information on each of them are given further below. Your `.env.local` file should consist of (with similar names):  <br />
    ```sh
-NEXT_PUBLIC_NOTION_API_KEY=
-NEXT_PUBLIC_NOTION_EXECUTIVES_DATABASE_ID=
-NEXT_PUBLIC_NOTION_EVENTS_DATABASE_ID=
-NEXT_PUBLIC_NOTION_RESOURCES_DATABASE_ID=
-NEXT_PUBLIC_EMAIL_API_KEY=
-NEXT_PUBLIC_EMAIL_SERVICE_ID=
-NEXT_PUBLIC_EMAIL_TEMPLATE_ID=
-NEXT_PUBLIC_VERCEL_SERVER=
+    NEXT_PUBLIC_NOTION_API_KEY=
+    NEXT_PUBLIC_NOTION_EXECUTIVES_DATABASE_ID=
+    NEXT_PUBLIC_NOTION_EVENTS_DATABASE_ID=
+    NEXT_PUBLIC_NOTION_RESOURCES_DATABASE_ID=
+    NEXT_PUBLIC_EMAIL_API_KEY=
+    NEXT_PUBLIC_EMAIL_SERVICE_ID=
+    NEXT_PUBLIC_EMAIL_TEMPLATE_ID=
+    NEXT_PUBLIC_VERCEL_SERVER=
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
