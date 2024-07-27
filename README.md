@@ -25,7 +25,7 @@
     
 <br />
     
-   <a href="https://uwmun.ca" target="_blank"><strong>🔗 VIEW LIVE WEBSITE »</strong></a>
+   <a href="https://uwmun.ca" target="_blank"><strong>🔗 VIEW ACTIVE WEBSITE »</strong></a>
     <br />
     <br />
   </p>
@@ -56,26 +56,24 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+The UWMUN website features the integration of **Notion API**, enabling the club's administrators to effortlessly keep the site updated by **making changes to a Notion workspace**. 
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+This allows those without a technical background to conveniently update the club's website!
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Screenshots
+
+<img src="https://uwmun.s3.ca-central-1.amazonaws.com/uwmun-screenshots.png">
 
 
 
-### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+
 
 
 
