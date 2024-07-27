@@ -25,7 +25,7 @@
     
 <br />
     
-   <a href="https://uwmun.ca" target="_blank"><strong>🔗 VIEW ACTIVE WEBSITE »</strong></a>
+   <a href="https://uwmun.ca" target="_blank"><strong>🔗 VISIT ACTIVE WEBSITE »</strong></a>
     <br />
     <br />
   </p>
@@ -245,9 +245,9 @@ The components in the frontend are then `map`ped from the Notion data:
 ```
 
 
-<!-- LICENSE -->
-## License
+<!-- extra -->
+## Miscellaneous
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Make sure all rows and columns in the databases are filled, as empty rows/columns may cause unexpected behaviour.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
