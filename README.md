@@ -135,7 +135,7 @@ There are numerous options. This project uses **EmailJS** for its email submitti
    ```sh
       NEXT_PUBLIC_EMAIL_API_KEY=
       NEXT_PUBLIC_EMAIL_SERVICE_ID=
-     NEXT_PUBLIC_EMAIL_TEMPLATE_ID=
+      NEXT_PUBLIC_EMAIL_TEMPLATE_ID=
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -221,7 +221,7 @@ The components in the frontend are then `map`ped from the Notion data:
                 );
               })}
         </div>
-    ```
+```
 
 
 <!-- Code Highlights -->
