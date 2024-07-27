@@ -42,12 +42,22 @@
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li>
+      <a href="#setting-up-the-database">Setting Up the Database with Notion</a>
+    </li>
+    <li>
+      <a href="#email-function">Enabling Email Submitting</a>
+    </li>
+    <li>
+      <a href="#configuring-backend">Configuring the Backend</a>
+    </li>
+    <li>
+      <a href="#frontend">Usage of Notion Data in page.tsx</a>
+    </li>
+    <li>
+      <a href="#backend">Obtaining Notion Data in index.js</a>
+    </li>
   </ol>
 </details>
 
@@ -176,7 +186,7 @@ The key functionality of this project is to make it easier for teams with non-te
 4. Share the link(s) with your colleagues! 
 
 
-<!-- Code Highlights -->
+<!-- Frontend -->
 ## Usage of Notion Data in `page.tsx`
 Data from Notion is fetched with:
   ```ruby
@@ -223,8 +233,10 @@ The components in the frontend are then `map`ped from the Notion data:
     </div>
   ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- Code Highlights -->
+
+<!-- Backend -->
 ## Obtaining Notion Data in `index.js`
 `index.js` uses the `@notionhq/client` library to fetch data from Notion using the Notion integration key and database ID from above:
 ```ruby
