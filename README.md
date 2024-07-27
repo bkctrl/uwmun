@@ -117,10 +117,25 @@ To set up the project locally and get a local copy up and running:
 1. Navigate to [Notion](https://notion.so) and create a document.
 2. Create a new database by typing `/database`.
 3. Populate the database with appropriate data. The database should look something like:
-<img src="">
 4. Navigate to [Integrations](https://www.notion.so/profile/integrations) and create a Notion integration. Select the database you created. Select `Internal` or `Public` as appropriate and choose a logo. The UWMUN wesbite for instance uses an internal integration. 
-<img src="">
 5. Select appropriate capabilities. Then show the Internal Integration Secret. This would be the `NEXT_PUBLIC_NOTION_API_KEY` in your `.env.local`. **Do not share this with anyone!**
+6. Find out your database ID. This is what precedes `?v=` of the link when you open the dabase in fulll screen:
+```sh
+https://www.notion.so/<database_ID>?v=<view_ID>
+```
+This would be the `NEXT_PUBLIC_NOTION_EXECUTIVES_DATABASE_ID` or the ID of your specific database. The UWMUN website for instance has one for the executives database.
+
+<!-- EMAIL FUNCTION -->
+## Enabling Email Submitting
+There are numerous options. This project uses **EmailJS** for its email submitting functionality. 
+1. Take a look at EmailJS's [Getting Started](https://www.emailjs.com/docs/) page for detailed instructions.
+2. Fill in the following in your `.env.local` file:
+```sh
+NEXT_PUBLIC_EMAIL_API_KEY=
+NEXT_PUBLIC_EMAIL_SERVICE_ID=
+NEXT_PUBLIC_EMAIL_TEMPLATE_ID=
+```
+
 
 <!-- USAGE EXAMPLES -->
 ## Usage
