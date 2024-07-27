@@ -63,29 +63,16 @@ This allows those without a technical background to conveniently update the club
 ### Screenshots
 
 <img src="https://uwmun.s3.ca-central-1.amazonaws.com/uwmun-screenshots.png">
-
-
-
-
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-
-
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To set up the project locally and get a local copy up and running:
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
 * npm
   ```sh
   npm install npm@latest -g
@@ -93,18 +80,28 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repository:
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/bkctrl/uwmun.git
    ```
-3. Install NPM packages
+2. Navigate to the project directory & install the dependencies :
+  ```sh
+cd uwmun && npm install
    ```sh
-   npm install
+3. Install the dependencies for the backend:
+  ```sh
+  cd server && npm instal
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+4. Set up the environment variables. More information on each of them are given further below. Your `.env.local` file should consist of (with similar names): 
+   ```sh
+NEXT_PUBLIC_NOTION_API_KEY=
+NEXT_PUBLIC_NOTION_EXECUTIVES_DATABASE_ID=
+NEXT_PUBLIC_NOTION_EVENTS_DATABASE_ID=
+NEXT_PUBLIC_NOTION_RESOURCES_DATABASE_ID=
+NEXT_PUBLIC_EMAIL_API_KEY=
+NEXT_PUBLIC_EMAIL_SERVICE_ID=
+NEXT_PUBLIC_EMAIL_TEMPLATE_ID=
+NEXT_PUBLIC_VERCEL_SERVER=
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
