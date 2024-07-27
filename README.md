@@ -32,37 +32,6 @@
 </div>
 
 
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-    </li>
-    <li>
-      <a href="#setting-up-the-database">Setting Up the Database with Notion</a>
-    </li>
-    <li>
-      <a href="#email-function">Enabling Email Submitting</a>
-    </li>
-    <li>
-      <a href="#configuring-backend">Configuring the Backend</a>
-    </li>
-    <li>
-      <a href="#frontend">Usage of Notion Data in page.tsx</a>
-    </li>
-    <li>
-      <a href="#backend">Obtaining Notion Data in index.js</a>
-    </li>
-  </ol>
-</details>
-
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
