@@ -39,6 +39,8 @@ The UWMUN website features the integration of **Notion API**, enabling the club'
 
 This allows those without a technical background to conveniently update the club's website!
 
+This project can also be **open-source** — if you are a future member/executive at UWMUN with a technical background, feel free to publish pull requests with new features or updates!
+
 ### Screenshots
 
 <img src="https://uwmun.s3.ca-central-1.amazonaws.com/uwmun-screenshots.png">
@@ -96,10 +98,10 @@ To set up the project locally and get a local copy up and running:
 1. Navigate to [Notion](https://notion.so) and create a document.
 2. Create a new database by typing `/database`.
 3. Populate the database with appropriate data. The database(s) you create should be in these formats:
-  <p><img src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-1.png"></p>
+   [](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-1.png)
 4. Navigate to [Integrations](https://www.notion.so/profile/integrations) and create a Notion integration. Select the database you created. Select `Internal` or `Public` as appropriate and choose a logo. The UWMUN wesbite for instance uses an internal integration. 
 5. Select appropriate capabilities. Then show the Internal Integration Secret. This would be the `NEXT_PUBLIC_NOTION_API_KEY` in your `.env.local`. **Do not share this with anyone!**
-  <p><img src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-2.png"></p>  
+  [](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-2.png)
 6. Find out your database ID. This is what precedes `?v=` of the link when you open the dabase in fulll screen:
    ```sh
    https://www.notion.so/<database_ID>?v=<view_ID>
@@ -144,10 +146,10 @@ You could test the backend both locally or by using a deployed API. The followin
 The website automatically updates to the changes you make to the Notion document!
 
 For instance:
-![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-3.png)  |  ![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-4.png)
+![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-3.png) ![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-4.png)
 
 After making some changes:
-![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-5.png)  |  ![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-6.png)
+![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-5.png) ![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-6.png)
 
 
 ### Inviting Collaborators to Your Notion Workspace
