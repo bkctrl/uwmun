@@ -98,10 +98,10 @@ To set up the project locally and get a local copy up and running:
 1. Navigate to [Notion](https://notion.so) and create a document.
 2. Create a new database by typing `/database`.
 3. Populate the database with appropriate data. The database(s) you create should be in these formats:
-   ![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-1.png)
+   ![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-1.png?)
 4. Navigate to [Integrations](https://www.notion.so/profile/integrations) and create a Notion integration. Select the database you created. Select `Internal` or `Public` as appropriate and choose a logo. The UWMUN wesbite for instance uses an internal integration. 
 5. Select appropriate capabilities. Then show the Internal Integration Secret. This would be the `NEXT_PUBLIC_NOTION_API_KEY` in your `.env.local`. **Do not share this with anyone!**
-  ![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-2.png)
+  ![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-2.png?)
 6. Find out your database ID. This is what precedes `?v=` of the link when you open the dabase in fulll screen:
    ```sh
    https://www.notion.so/<database_ID>?v=<view_ID>
@@ -147,16 +147,16 @@ The website automatically updates to the changes you make to the Notion document
 
 For instance:
 <p align="center">
-  <img alt="Light" src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-3.png" width="45%">
+  <img alt="Light" src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-3.png?" width="45%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Dark" src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-4.png" width="45%">
+  <img alt="Dark" src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-4.png?" width="45%">
 </p>
 
 After making some changes:
 <p align="center">
-  <img alt="Light" src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-5.png" width="45%">
+  <img alt="Light" src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-5.png?" width="45%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Dark" src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-6.png" width="45%">
+  <img alt="Dark" src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-6.png?" width="45%">
 </p>
 
 
@@ -167,7 +167,7 @@ The key functionality of this project is to make it easier for teams with non-te
 2. Select `Anyone with link at Your Notion`.
 3. Select `Full access`/`Can edit`/`Can comment`/`Can view` appropriately. For instance, the President and the administrator at UWMUN have full access while other executive have an editing privilege.
 4. Share the link(s) with your colleagues!
-   ![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-7.png)
+   ![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-7.png?)
 
 
 <!-- Frontend -->
