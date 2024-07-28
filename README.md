@@ -148,16 +148,16 @@ The website automatically updates to the changes you make to the Notion document
 
 For instance:
 <p align="center">
-  <img alt="Light" src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-3.png?" width="45%">
+  <img alt="Light" src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-3-new.png?" width="45%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Dark" src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-4.png?" width="45%">
+  <img alt="Dark" src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-4-new.png?" width="45%">
 </p>
 
 After making some changes:
 <p align="center">
-  <img alt="Light" src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-5.png?" width="45%">
+  <img alt="Light" src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-5-new.png?" width="45%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Dark" src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-6.png?" width="45%">
+  <img alt="Dark" src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-6-new.png?" width="45%">
 </p>
 
 
