@@ -29,7 +29,7 @@
     <br />
     <br />
   </p>
-</div>
+</div> 
 
 
 <!-- ABOUT THE PROJECT -->
