@@ -98,10 +98,10 @@ To set up the project locally and get a local copy up and running:
 1. Navigate to [Notion](https://notion.so) and create a document.
 2. Create a new database by typing `/database`.
 3. Populate the database with appropriate data. The database(s) you create should be in these formats:
-   [](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-1.png)
+   ![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-1.png)
 4. Navigate to [Integrations](https://www.notion.so/profile/integrations) and create a Notion integration. Select the database you created. Select `Internal` or `Public` as appropriate and choose a logo. The UWMUN wesbite for instance uses an internal integration. 
 5. Select appropriate capabilities. Then show the Internal Integration Secret. This would be the `NEXT_PUBLIC_NOTION_API_KEY` in your `.env.local`. **Do not share this with anyone!**
-  [](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-2.png)
+  ![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-2.png)
 6. Find out your database ID. This is what precedes `?v=` of the link when you open the dabase in fulll screen:
    ```sh
    https://www.notion.so/<database_ID>?v=<view_ID>
