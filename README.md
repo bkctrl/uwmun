@@ -159,7 +159,7 @@ The key functionality of this project is to make it easier for teams with non-te
 2. Select `Anyone with link at Your Notion`.
 3. Select `Full access`/`Can edit`/`Can comment`/`Can view` appropriately. For instance, the President and the administrator at UWMUN have full access while other executive have an editing privilege.
 4. Share the link(s) with your colleagues!
-<img src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-7.png">
+   ![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-7.png)
 
 
 <!-- Frontend -->
