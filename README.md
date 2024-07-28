@@ -147,18 +147,10 @@ You could test the backend both locally or by using a deployed API. The followin
 The website automatically updates to the changes you make to the Notion document!
 
 For instance:
-<p align="center">
-  <div width="45%">![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-3.png)</div>
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <div width="45%">![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-4.png)</div>
-</p>
+![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-3.png?) ![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-4.png?) 
 
 After making some changes:
-<p align="center">
-  <div width="45%">![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-5.png)</div>
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <div width="45%">![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-6.png)</div>
-</p>
+![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-5.png?) ![](https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-6.png?) 
 
 
 
