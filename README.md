@@ -96,8 +96,10 @@ To set up the project locally and get a local copy up and running:
 1. Navigate to [Notion](https://notion.so) and create a document.
 2. Create a new database by typing `/database`.
 3. Populate the database with appropriate data. The database(s) you create should be in these formats:
+<img src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-1.png">
 4. Navigate to [Integrations](https://www.notion.so/profile/integrations) and create a Notion integration. Select the database you created. Select `Internal` or `Public` as appropriate and choose a logo. The UWMUN wesbite for instance uses an internal integration. 
 5. Select appropriate capabilities. Then show the Internal Integration Secret. This would be the `NEXT_PUBLIC_NOTION_API_KEY` in your `.env.local`. **Do not share this with anyone!**
+<img src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-2.png">  
 6. Find out your database ID. This is what precedes `?v=` of the link when you open the dabase in fulll screen:
    ```sh
    https://www.notion.so/<database_ID>?v=<view_ID>
@@ -142,17 +144,26 @@ You could test the backend both locally or by using a deployed API. The followin
 The website automatically updates to the changes you make to the Notion document!
 
 For instance:
+<p float="left">
+  <img src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-3.png">
+  <img src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-4.png">
+</p>
 
-
+After making some changes:
+<p float="left">
+  <img src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-5.png">
+  <img src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-6.png">
+</p>
 
 
 ### Inviting Collaborators to Your Notion Workspace
 
 The key functionality of this project is to make it easier for teams with non-technical members to participate in website updating. To achieve this, simply:
-1. Click `share` in the top right corner of your Notion document.
+1. Click `Share` in the top right corner of your Notion document.
 2. Select `Anyone with link at Your Notion`.
 3. Select `Full access`/`Can edit`/`Can comment`/`Can view` appropriately. For instance, the President and the administrator at UWMUN have full access while other executive have an editing privilege.
-4. Share the link(s) with your colleagues! 
+4. Share the link(s) with your colleagues!
+<img src="https://uwmun.s3.ca-central-1.amazonaws.com/notion-demo-7.png">
 
 
 <!-- Frontend -->
